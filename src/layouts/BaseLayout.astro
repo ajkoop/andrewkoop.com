@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+
+const {
+  title = "Andrew J. Koop",
+  description = "Andrew J. Koop is a cabinet-level executive helping educational institutions connect systems, improve communication, and build stronger organizations.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

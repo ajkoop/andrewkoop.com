@@ -1,0 +1,52 @@
+---
+import { profile } from "../data/profile";
+
+const highlights = [
+  {
+    title: "Helping people do their best work",
+    text: "I like bringing people together, reducing friction, and making work feel easier.",
+  },
+  {
+    title: "Technical enough to help",
+    text: "I can still jump into the details with developers when something needs to move.",
+  },
+  {
+    title: "Connecting systems",
+    text: "Enterprise integrations, identity management, and workflow automation are my happy place.",
+  },
+];
+---
+
+<section class="hero card">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Creative • friendly • technical • collaborative</p>
+
+      <h1>{profile.name}</h1>
+      <h2>Helping people, systems, and ideas work better together.</h2>
+
+      <p class="lead">
+        I’ve spent more than twenty years helping educational institutions connect people,
+        improve communication, and reduce unnecessary complexity so teams can focus on what
+        matters most.
+      </p>
+
+      <p class="tagline">{profile.tagline}</p>
+    </div>
+
+    <aside class="hero-side">
+      <div class="portrait-card">
+        <img src="/images/andrew-headshot.png" alt="Andrew J. Koop" />
+      </div>
+    </aside>
+  </div>
+
+  <div class="highlight-list">
+    {highlights.map((item) => (
+      <article class="highlight">
+        <h3>{item.title}</h3>
+        <p>{item.text}</p>
+      </article>
+    ))}
+  </div>
+</section>
