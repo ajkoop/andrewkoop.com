@@ -1,52 +1,64 @@
 ---
 import { profile } from "../data/profile";
 
-const highlights = [
+const principles = [
   {
-    title: "Helping people do their best work",
-    text: "I like bringing people together, reducing friction, and making work feel easier.",
+    title: "Build Capacity",
+    text: "Technology should expand an organization’s capacity—not its complexity.",
   },
   {
-    title: "Technical enough to help",
-    text: "I can still jump into the details with developers when something needs to move.",
+    title: "Practice Stewardship",
+    text: "Every public dollar should be treated as if it directly affects a family.",
   },
   {
-    title: "Connecting systems",
-    text: "Enterprise integrations, identity management, and workflow automation are my happy place.",
+    title: "Develop People",
+    text: "Leadership means helping people build the confidence to solve the next problem themselves.",
   },
 ];
 ---
 
-<section class="hero card">
-  <div class="hero-grid">
+<section class="hero">
+  <div class="hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">Creative • friendly • technical • collaborative</p>
+      <p class="eyebrow">Andrew J. Koop</p>
 
-      <h1>{profile.name}</h1>
-      <h2>Helping people, systems, and ideas work better together.</h2>
+      <h1>Building Capacity Through Connection</h1>
 
-      <p class="lead">
-        I’ve spent more than twenty years helping educational institutions connect people,
-        improve communication, and reduce unnecessary complexity so teams can focus on what
-        matters most.
+      <p class="hero-lead">
+        I help educational organizations connect people, systems, and ideas so they can
+        work more effectively, make better decisions, and stay focused on the people they serve.
       </p>
 
-      <p class="tagline">{profile.tagline}</p>
+<p class="hero-note">
+  My work sits at the intersection of technology, leadership, and public
+  service. I’m most interested in building systems—and developing
+  people—that leave an organization stronger than I found it.
+</p>
+
+<p class="hero-note">
+  I’ve spent my career helping people untangle difficult problems, reconnect
+  work that has become disconnected, and build the confidence to carry
+  increasingly heavy things.
+</p>
     </div>
 
-    <aside class="hero-side">
-      <div class="portrait-card">
-        <img src="/images/andrew-headshot.png" alt="Andrew J. Koop" />
-      </div>
-    </aside>
+    <div class="portrait-wrap">
+      <img
+        src="/images/andrew-headshot.png"
+        alt="Andrew J. Koop"
+        class="portrait"
+      />
+    </div>
   </div>
 
-  <div class="highlight-list">
-    {highlights.map((item) => (
-      <article class="highlight">
-        <h3>{item.title}</h3>
-        <p>{item.text}</p>
-      </article>
-    ))}
+  <div class="principles-grid">
+    {
+      principles.map((principle) => (
+        <article class="principle">
+          <h2>{principle.title}</h2>
+          <p>{principle.text}</p>
+        </article>
+      ))
+    }
   </div>
 </section>
