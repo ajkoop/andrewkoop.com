@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
 ---
@@ -9,7 +8,20 @@ import Hero from "../components/Hero.astro";
   title="Andrew J. Koop"
   description="Building capacity through connection in education, technology, and leadership."
 >
-  <Header />
   <Hero />
+
+  <section class="contact-cta">
+    <p class="eyebrow">Contact</p>
+
+    <h2>
+      Have a question, an opportunity, or a difficult problem worth talking
+      through?
+    </h2>
+
+    <p>I’d be glad to hear from you.</p>
+
+    <a class="contact-button" href="/contact">Get in touch</a>
+  </section>
+
   <Footer />
 </BaseLayout>

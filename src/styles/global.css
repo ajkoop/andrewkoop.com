@@ -521,3 +521,66 @@ img {
 .contact-link:hover {
   border-bottom-color: #1d2633;
 }
+
+.contact-cta {
+  width: min(1120px, calc(100% - 32px));
+  margin: 1.5rem auto 0;
+  padding: clamp(2rem, 5vw, 4rem);
+  border-radius: 28px;
+  background: #1d2633;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-cta .eyebrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-cta h2 {
+  max-width: 18ch;
+  margin: 0 auto;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.contact-cta > p:not(.eyebrow) {
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.1rem;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-button:hover {
+  background: #fff;
+  color: #1d2633;
+  text-decoration: none;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #1d2633;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(29, 38, 51, 0.35);
+}
+
+.back-link:hover {
+  border-bottom-color: #1d2633;
+  text-decoration: none;
+}
