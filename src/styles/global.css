@@ -477,27 +477,26 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0.65rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: 1px solid #1d2633;
   border-radius: 999px;
-  color: #fff;
+  background: transparent;
+  color: #1d2633;
   text-decoration: none;
   font-weight: 700;
   transition:
     background-color 160ms ease,
     color 160ms ease,
-    border-color 160ms ease,
     transform 160ms ease;
 }
 
 .contact-link:hover {
-  background: #fff;
-  color: #1d2633;
-  border-color: #fff;
+  background: #1d2633;
+  color: #fff;
   transform: translateY(-1px);
 }
 
 .contact-link:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.45);
+  outline: 3px solid rgba(29, 38, 51, 0.25);
   outline-offset: 3px;
 }
 
