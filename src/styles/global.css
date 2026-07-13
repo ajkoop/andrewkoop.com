@@ -478,21 +478,17 @@ img {
   justify-content: center;
   padding: 0.65rem 1rem;
   border: 1px solid #1d2633;
+  border-bottom: 1px solid #1d2633;
   border-radius: 999px;
   background: transparent;
   color: #1d2633;
   text-decoration: none;
   font-weight: 700;
-  transition:
-    background-color 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
 }
 
 .contact-link:hover {
   background: #1d2633;
   color: #fff;
-  transform: translateY(-1px);
 }
 
 .contact-link:focus-visible {
@@ -509,16 +505,10 @@ img {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-between;
 }
 
-.site-name {
-  color: #1d2633;
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
 
 .contact-link {
   color: #1d2633;
